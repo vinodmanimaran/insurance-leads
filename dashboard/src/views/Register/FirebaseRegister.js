@@ -40,7 +40,7 @@ const FirebaseRegister = ({ ...rest }) => {
         password: values.password // Ensure the password field is included
       };
   
-      const response = await axios.post('http://localhost:4040/auth/signup', formData);
+      const response = await axios.post('https://leads-generation.onrender.com/auth/signup', formData);
       if (response.status === 200) {
         navigate('/login');
 
